@@ -1,6 +1,8 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/identity/functions/auth.php';
+
 use Kreait\Firebase\Factory;
 
 $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
@@ -10,21 +12,10 @@ $database = $factory->createDatabase();
 $GLOBALS["auth"]=$auth;
 $GLOBALS["database"]=$database;
 
-if(isset($_COOKIE["session"])){
-  try {
-  $verifiedSessionCookie = $GLOBALS["auth"]->verifySessionCookie($_COOKIE["session"]);
-    
-    $uid = $verifiedSessionCookie->claims()->get('sub');
-    
-    $user = $GLOBALS["auth"]->getUser($uid);
-    $GLOBALS["user"]=$user;
-  } catch (FailedToVerifySessionCookie $e) {}
-}
-
 $now = time(); // or your date as well
 
-if(isset($_COOKIE["session"])){
-  $created_at=$GLOBALS["user"]->metadata->createdAt;
+if(getCurrentUser()!=null){
+  $created_at=getCurrentUser()->metadata->createdAt;
   $start_date=new \DateTime();
   $start_date->setTimestamp($created_at->getTimestamp());
   $display=$start_date->format('Y-m-d');
