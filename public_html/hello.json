@@ -1,0 +1,518 @@
+[
+  {
+    "language": "Afrikaans",
+    "hello": "hallo",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/d/de/LL-Q14196_%28afr%29-Oesjaar-hallo.wav",
+    "verified": true
+  },
+  {
+    "language": "Albanian",
+    "hello": "përshëndetje",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Sq-p%C3%ABrsh%C3%ABndetje.oga",
+    "verified": true
+  },
+  {
+    "language": "Amharic",
+    "hello": "ጤና ይስጥልኝ",
+    "translitteration": "teanastëllën",
+    "video": "https://www.youtube.com/watch?v=PX1On0RcL28",
+    "font": "Noto Sans Ethiopic",
+    "verified": true
+  },
+  {
+    "language": "Arabic",
+    "hello": "السلام عليكم",
+    "translitteration": "as-salām ʿalaykum",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/0/07/%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85_%D8%B9%D9%84%D9%8A%D9%83%D9%85.ogg",
+    "font": "Noto Sans Arabic",
+    "verified": true
+  },
+  {
+    "language": "Armenian",
+    "hello": "բարև",
+    "translitteration": "Barev",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/3/35/Hy-%D5%A2%D5%A1%D6%80%D6%87.ogg",
+    "verified": true
+  },
+  {
+    "language": "Azerbaijani",
+    "hello": "salam",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/6/64/LL-Q9292_%28aze%29-Azerbaijani_audiorecordings-salam.wav",
+    "verified": true
+  },
+  {
+    "language": "Basque",
+    "hello": "kaixo",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/a/a1/LL-Q8752_%28eus%29-Xabier_Ca%C3%B1as-kaixo.wav",
+    "verified": true
+  },
+  {
+    "language": "Belarusian",
+    "hello": "дабрыдзень",
+    "translitteration": "dobry dzień",
+    "video": "https://www.youtube.com/watch?v=RsHSw3cIDic",
+    "verified": true
+  },
+  {
+    "language": "Bengali",
+    "hello": "নমস্কার",
+    "translitteration": "nomoskār",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/6/60/LL-Q9610_%28ben%29-Titodutta-%E0%A6%A8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A6%BE%E0%A6%B0.wav",
+    "verified": true
+  },
+  {
+    "language": "Bosnian",
+    "hello": "zdravo",
+    "audio": "https://audio12.forvo.com/audios/mp3/x/d/xd_9057156_23_649000_589369.mp3",
+    "source": "https://forvo.com/word/zdravo/"
+  },
+  {
+    "language": "Bulgarian",
+    "hello": "здравейте",
+    "translitteration": "zdravéjte",
+    "audio": "https://audio12.forvo.com/audios/mp3/g/6/g6_9109135_17_987424.mp3",
+    "source": "https://forvo.com/word/%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%B5%D0%B9%D1%82%D0%B5"
+  },
+  {
+    "language": "Catalan",
+    "hello": "hola",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/e/e5/LL-Q7026_%28cat%29-Unjoanqualsevol-hola.wav"
+  },
+  {
+    "language": "Cebuano",
+    "hello": "kumusta",
+    "audio": "https://audio12.forvo.com/audios/mp3/p/c/pc_9011639_165_1706479_72933.mp3",
+    "source": "https://forvo.com/word/kumusta/"
+  },
+  {
+    "language": "Chichewa",
+    "hello": "muli bwanji",
+    "audio": "https://audio12.forvo.com/audios/mp3/9/w/9w_9404934_123_2851662.mp3",
+    "source": "https://forvo.com/word/muli_bwanji/"
+  },
+  {
+    "language": "Chinese",
+    "hello": "您好",
+    "translitteration": "nín hǎo",
+    "audio": "https://audio12.forvo.com/audios/mp3/z/i/zi_9770602_186_516103.mp3",
+    "source": "https://forvo.com/word/%E6%82%A8%E5%A5%BD/"
+  },
+  {
+    "language": "Corsican",
+    "hello": "bonghjornu",
+    "audio": "https://audio12.forvo.com/audios/mp3/k/h/kh_9557877_27_1198335.mp3",
+    "source": "https://forvo.com/word/bonghjornu/"
+  },
+  {
+    "language": "Croatian",
+    "hello": "zdravo",
+    "audio": "https://audio12.forvo.com/audios/mp3/q/4/q4_9339511_153_649000.mp3",
+    "source": "https://forvo.com/word/zdravo/"
+  },
+  {
+    "language": "Czech",
+    "hello": "ahoj",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Cs-ahoj.oga"
+  },
+  {
+    "language": "Danish",
+    "hello": "hej",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Da-hej.ogg"
+  },
+  {
+    "language": "Dutch",
+    "hello": "hallo",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/3/31/Nl-hallo.ogg"
+  },
+  {
+    "language": "English",
+    "hello": "hello",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/4/48/En-uk-hello.ogg"
+  },
+  {
+    "language": "Esperanto",
+    "hello": "saluton",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Eo-saluton.ogg"
+  },
+  {
+    "language": "Estonian",
+    "hello": "Tere",
+    "audio": "https://audio12.forvo.com/audios/mp3/j/p/jp_9204672_42_395387_1646105.mp3",
+    "source": "https://forvo.com/word/tere/#et"
+  },
+  {
+    "language": "Filipino",
+    "hello": "kumusta",
+    "audio": "https://audio12.forvo.com/audios/mp3/p/c/pc_9011639_165_1706479_72933.mp3",
+    "source": "https://forvo.com/word/kumusta/"
+  },
+  {
+    "language": "Finnish",
+    "hello": "hei",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/5/57/Fi-hei.ogg"
+  },
+  {
+    "language": "French",
+    "hello": "bonjour",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Fr-bonjour.ogg"
+  },
+  {
+    "language": "Frisian",
+    "hello": "goeie",
+    "audio": "https://audio12.forvo.com/audios/mp3/p/t/pt_9167657_50_622649_413077.mp3",
+    "source": "https://forvo.com/word/goeie/#fy"
+  },
+  {
+    "language": "Galician",
+    "hello": "ola",
+    "audio": "https://audio12.forvo.com/audios/mp3/a/6/a6_9010100_53_11429_341079.mp3",
+    "source": "https://forvo.com/word/ola/#gl"
+  },
+  {
+    "language": "Georgian",
+    "hello": "გამარჯობა",
+    "translitteration": "gamarjoba",
+    "audio": "https://audio12.forvo.com/audios/mp3/j/x/jx_9078831_78_543208_265669.mp3",
+    "source": "https://forvo.com/word/გამარჯობა"
+  },
+  {
+    "language": "German",
+    "hello": "hallo",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/0/0d/CPIDL_German_-_Hallo.ogg"
+  },
+  {
+    "language": "Greek",
+    "hello": "γεια σας",
+    "translitteration": "geia sas",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/b/b0/EL-%CE%B3%CE%B5%CE%B9%CE%B1-%CF%83%CE%B1%CF%82.ogg"
+  },
+  {
+    "language": "Gujarati",
+    "hello": "કેમ છે",
+    "translitteration": "kem che?",
+    "audio": "https://audio12.forvo.com/audios/mp3/b/4/b4_9900961_55_6089173.mp3",
+    "source": "https://forvo.com/word/%E0%AA%95%E0%AB%87%E0%AA%AE_%E0%AA%9B%E0%AB%87%253F/#gu"
+  },
+  {
+    "language": "Haitian Creole",
+    "hello": "bonjou",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/4/4c/LL-Q3006280_%28gcf%29-Pal%C3%A9_Kr%C3%A9yol-Bonjou.wav"
+  },
+  {
+    "language": "Hausa",
+    "hello": "sannu",
+    "audio": "https://audio12.forvo.com/audios/mp3/b/8/b8_9198897_57_1245804_1.mp3",
+    "source": "https://forvo.com/word/Sannu"
+  },
+  {
+    "language": "Hawaiian",
+    "hello": "aloha",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/4/47/LL-Q1860_%28eng%29-Vealhurl-aloha.wav"
+  },
+  {
+    "language": "Hebrew",
+    "hello": "שלום",
+    "translitteration": "shalóm",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/29/He-Shalom.ogg/He-Shalom.ogg.mp3"
+  },
+  {
+    "language": "Hindi",
+    "hello": "नमस्ते",
+    "translitteration": "namaste",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/c/c7/LL-Q1568_%28hin%29-QueerEcofeminist-%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87.wav"
+  },
+  {
+    "language": "Hmong",
+    "hello": "nyob zoo",
+    "audio": "https://audio12.forvo.com/audios/mp3/y/u/yu_9168555_234_1600775_1.mp3",
+    "source": "https://forvo.com/word/nyob_zoo/#hmn"
+  },
+  {
+    "language": "Hungarian",
+    "hello": "szervusz",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Hu-szervusz.ogg"
+  },
+  {
+    "language": "Icelandic",
+    "hello": "halló",
+    "audio": "https://audio12.forvo.com/audios/mp3/b/8/b8_9047767_73_889924_1.mp3",
+    "source": "https://forvo.com/word/hall%C3%B3/#is"
+  },
+  {
+    "language": "Igbo",
+    "hello": "ndewo",
+    "video": "https://www.youtube.com/watch?v=bS6Xk9SAfHY"
+  },
+  {
+    "language": "Indonesian",
+    "hello": "halo",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/c/cc/LL-Q9240_%28ind%29-Akbar_Soepadhi-halo.wav"
+  },
+  {
+    "language": "Irish",
+    "hello": "dia duit",
+    "audio": "https://audio12.forvo.com/audios/mp3/p/a/pa_9058719_51_647031.mp3",
+    "source": "https://forvo.com/word/dia_duit/#ga"
+  },
+  {
+    "language": "Italian",
+    "hello": "ciao",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/37/It-ciao.ogg/It-ciao.ogg.mp3"
+  },
+  {
+    "language": "Japanese",
+    "hello": "こんにちは",
+    "translitteration": "kon'nichiwa",
+    "audio": "https://upload.wikimedia.org/wikipedia/commons/9/97/Wikibooksqsjapanese1-snd005.ogg"
+  },
+  {
+    "language": "Javanese",
+    "hello": "Hello"
+  },
+  {
+    "language": "Kannada",
+    "hello": "ಹಲೋ",
+    "translitteration": "Halō"
+  },
+  {
+    "language": "Kazakh",
+    "hello": "Сәлем",
+    "translitteration": "Sälem"
+  },
+  {
+    "language": "Khmer",
+    "hello": "ជំរាបសួរ",
+    "translitteration": "chomreabsuor"
+  },
+  {
+    "language": "Korean",
+    "hello": "안녕하세요",
+    "translitteration": "annyeonghaseyo"
+  },
+  {
+    "language": "Kurdish (Kurmanji)",
+    "hello": "Slav"
+  },
+  {
+    "language": "Kyrgyz",
+    "hello": "салам",
+    "translitteration": "salam"
+  },
+  {
+    "language": "Lao",
+    "hello": "ສະບາຍດີ",
+    "translitteration": "sabaidi"
+  },
+  {
+    "language": "Latin",
+    "hello": "salve"
+  },
+  {
+    "language": "Latvian",
+    "hello": "Labdien!"
+  },
+  {
+    "language": "Lithuanian",
+    "hello": "Sveiki"
+  },
+  {
+    "language": "Luxembourgish",
+    "hello": "Moien"
+  },
+  {
+    "language": "Macedonian",
+    "hello": "Здраво",
+    "translitteration": "Zdravo"
+  },
+  {
+    "language": "Malagasy",
+    "hello": "Hello"
+  },
+  {
+    "language": "Malay",
+    "hello": "Hello"
+  },
+  {
+    "language": "Malayalam",
+    "hello": "ഹലോ",
+    "translitteration": "halēā"
+  },
+  {
+    "language": "Maltese",
+    "hello": "Hello"
+  },
+  {
+    "language": "Maori",
+    "hello": "Hiha"
+  },
+  {
+    "language": "Marathi",
+    "hello": "नमस्कार",
+    "translitteration": "Namaskāra"
+  },
+  {
+    "language": "Mongolian",
+    "hello": "Сайн уу",
+    "translitteration": "Sain uu"
+  },
+  {
+    "language": "Myanmar (Burmese)",
+    "hello": "ဟယ်လို",
+    "translitteration": "haallo"
+  },
+  {
+    "language": "Nepali",
+    "hello": "नमस्ते",
+    "translitteration": "namaste"
+  },
+  {
+    "language": "Norwegian",
+    "hello": "Hallo"
+  },
+  {
+    "language": "Pashto",
+    "hello": "سلام",
+    "translitteration": "slam"
+  },
+  {
+    "language": "Persian",
+    "hello": "سلام",
+    "translitteration": "slam"
+  },
+  {
+    "language": "Polish",
+    "hello": "Cześć"
+  },
+  {
+    "language": "Portuguese",
+    "hello": "Olá"
+  },
+  {
+    "language": "Punjabi",
+    "hello": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",
+    "translitteration": "Sata srī akāla"
+  },
+  {
+    "language": "Romanian",
+    "hello": "Alo"
+  },
+  {
+    "language": "Russian",
+    "hello": "привет"
+  },
+  {
+    "language": "Samoan",
+    "hello": "Talofa"
+  },
+  {
+    "language": "Scots Gaelic",
+    "hello": "Hello"
+  },
+  {
+    "language": "Serbian",
+    "hello": "здраво",
+    "translitteration": "zdravo",
+    "audio": "https://audio12.forvo.com/audios/mp3/q/4/q4_9339511_153_649000.mp3",
+    "source": "https://forvo.com/word/zdravo/"
+  },
+  {
+    "language": "Sesotho",
+    "hello": "Hello"
+  },
+  {
+    "language": "Shona",
+    "hello": "Hello"
+  },
+  {
+    "language": "Sindhi",
+    "hello": "هيلو"
+  },
+  {
+    "language": "Sinhala",
+    "hello": "හෙලෝ"
+  },
+  {
+    "language": "Slovak",
+    "hello": "ahoj"
+  },
+  {
+    "language": "Slovenian",
+    "hello": "Pozdravljeni"
+  },
+  {
+    "language": "Somali",
+    "hello": "Hello"
+  },
+  {
+    "language": "Spanish",
+    "hello": "Hola"
+  },
+  {
+    "language": "Sundanese",
+    "hello": "halo"
+  },
+  {
+    "language": "Swahili",
+    "hello": "Sawa"
+  },
+  {
+    "language": "Swedish",
+    "hello": "Hallå"
+  },
+  {
+    "language": "Tajik",
+    "hello": "Салом"
+  },
+  {
+    "language": "Tamil",
+    "hello": "ஹலோ"
+  },
+  {
+    "language": "Telugu",
+    "hello": "హలో"
+  },
+  {
+    "language": "Thai",
+    "hello": "สวัสดี"
+  },
+  {
+    "language": "Turkish",
+    "hello": "Merhaba"
+  },
+  {
+    "language": "Ukranian",
+    "hello": "Здрастуйте"
+  },
+  {
+    "language": "Urdu",
+    "hello": "ہیلو"
+  },
+  {
+    "language": "Uzbek",
+    "hello": "Salom"
+  },
+  {
+    "language": "Vietnamese",
+    "hello": "Xin chào"
+  },
+  {
+    "language": "Welsh",
+    "hello": "Helo"
+  },
+  {
+    "language": "Xhosa",
+    "hello": "Sawubona"
+  },
+  {
+    "language": "Yiddish",
+    "hello": "העלא"
+  },
+  {
+    "language": "Yoruba",
+    "hello": "Kaabo"
+  },
+  {
+    "language": "Zulu",
+    "hello": "Sawubona"
+  }
+]

@@ -1,0 +1,5 @@
+.config
+vendor
+composer.lock
+.tests
+desktop.ini

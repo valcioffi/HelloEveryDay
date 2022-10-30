@@ -1,0 +1,147 @@
+body{
+  font-family: 'Montserrat','Lato', 'Arial';
+  background-color: white;
+  margin:.5em;
+}
+
+@media screen and (min-width: 640px) {
+  #helloContainer{
+    background-color:white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px;
+    border-radius: 5px;
+    line-height: unset;
+  }
+  
+  #about{
+    margin-right:10em;
+    margin-left:10em;
+    font-size: 130%;
+  }
+
+  #about button, #about .button{
+    font-size: 100% !important;
+  }
+  
+  #footer{
+    margin-left:5em;
+    margin-right:5em;
+    margin-bottom:10px;
+  }
+
+  button, .button{
+    font-size:150%;
+  }
+
+  #hello {
+    font-size:500%;
+  }
+  
+  #lan{
+    font-size:250%;
+  }
+    
+  #translitteration{
+    font-size:200%;
+  }
+}
+@media screen and (max-width: 639px) {
+
+  #hello {
+    font-size:250%;
+  }
+
+  #lan{
+    font-size:200%;
+  }
+    
+  #translitteration{
+    font-size:180%;
+  }
+  th {
+    display: table-row;
+  }
+}
+
+a, a:visited{
+  color:#0E65C0;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#049DFF;
+  text-decoration: underline;
+}
+
+button, .button{
+  border: none;
+  background-color:#0E65C0;
+  color:white;
+  padding:.5em;
+  font-weight:bold;
+  border-radius:2px;
+  margin-left:.25em;
+  margin-right:.25em;
+}
+
+button:disabled,
+button[disabled]{
+  background-color:#BFBFBF;
+}
+
+button.playing{
+    background-color:#049DFF;
+}
+button.playing span{
+    display:none;
+}
+button.playing::after{
+  content: "Playing..."
+}
+
+button:hover:enabled, .button:hover:enabled{
+  background-color:#049DFF;
+}
+
+
+#content{
+    text-align: center;
+    background-color: #F8F9FA;
+    padding:5em;
+}
+#header {
+  background-color: white; 
+  padding:1em;
+  position: sticky;
+  z-index: 999;
+}
+
+#header #left{
+  float:left;
+}
+
+#header #right{
+  float:right;
+}
+
+.txB{
+  color:#0E65C0;
+  font-weight: bolder;
+}
+
+.txG{
+  color:#7F7F7F;
+}
+
+.bgB{
+  background-color: #0E65C0;
+  color: white;
+}
+
+#hello {
+  margin:0;
+}
+
+#translitteration{
+  font-weight:normal;
+  margin:0;
+}
