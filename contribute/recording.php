@@ -1,6 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
+require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
 
 OOUI\Theme::setSingleton( new WikimediaUITheme() );
 OOUI\Element::setDefaultDir( 'ltr' );
