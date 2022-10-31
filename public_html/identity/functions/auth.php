@@ -46,13 +46,6 @@ function login($email, $password, $external=false){
     }catch (Kreait\Firebase\Exception\Auth\UserNotFound $e){
       echo "No user registered with the selected email. <a href='signup.php'>Sign Up</a>!";
     }
-
-    /*
-    var_dump($auth->getUserByEmail($email));
-    $uid=$auth->getUserByEmail($email)->uid;
-    $customToken = $auth->createCustomToken($uid);
-    $customTokenString = $customToken->toString();
-    */
 }
 
 function signup($name, $email, $password, $custom=NULL, $external=false){

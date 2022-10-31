@@ -49,7 +49,7 @@ if ( isset( $_GET['oauth_verifier'] ) ) {
 
   // Example 1: get the authenticated user's identity.
   $ident = $client->identify( $accessToken );
-  authIntegration($ident->username, $ident->username.".wikimedia@helloeveryday.toolforge.org", "wikimedia");
+  authIntegration($ident->username, $ident->username.".wikimedia@helloeveryday.toolforge.org", "Wikimedia");
 }
 
 function mediawiki(){

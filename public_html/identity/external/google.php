@@ -60,7 +60,7 @@ if (isset($_GET['code'])) {
       $name=$google_user["givenName"];
       if(isset($google_user["familyName"]))
         $name=$name." ".$google_user["familyName"];
-      authIntegration($name, $google_user["email"], "google");
+      authIntegration($name, $google_user["email"], "Google");
 
 }
 

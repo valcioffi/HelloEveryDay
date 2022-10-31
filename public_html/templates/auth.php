@@ -3,10 +3,22 @@
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/external/mediawiki.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/external/google.php';
 
+function getProviderIcon($provider){
+  switch(strtolower($provider)){
+    case 'google';
+      return "<i class=\"fa fa-google\" aria-hidden=\"true\"></i>";
+      break;
+
+    case 'wikimedia';
+      return "<i class=\"fa fa-wikipedia-w\" aria-hidden=\"true\"></i>";
+      break;
+  }
+}
+
 function externalAuths(){
   echo "
-  <button class='extauthbtn' onclick='window.location.href=\"".mediawiki()."\"'><i class=\"fa fa-wikipedia-w\" aria-hidden=\"true\"></i>Sign In with Wikimedia</button><br/><br/>
-  <button class='extauthbtn' onclick='window.location.href=\"".google()."\"'><i class=\"fa fa-google\" aria-hidden=\"true\"></i>Sign In with Google</button>
+  <button class='extauthbtn' onclick='window.location.href=\"".mediawiki()."\"'>".getProviderIcon("wikimedia")."Sign In with Wikimedia</button><br/><br/>
+  <button class='extauthbtn' onclick='window.location.href=\"".google()."\"'>".getProviderIcon("google")."Sign In with Google</button>
   ";
 }
 

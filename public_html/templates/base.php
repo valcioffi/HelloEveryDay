@@ -18,12 +18,20 @@ function meta($conf=[]){
 }
 
 function heading(){
+  if(getCurrentUser()!=null){
+    $userOptions=getCurrentUser()->displayName." (<a href='/identity/logout'>logout</a>)";
+    if(isset(getCurrentUser()->customClaims["provider"]))
+      $userOptions=getProviderIcon(getCurrentUser()->customClaims["provider"]).$userOptions;
+  }else{
+    $userOptions="<a href='/identity/signup'>Sign Up</a> &#183;
+     <a>Log In</a>";
+  }
   echo '<header id="header" class="base">
           <span id="left" class="base">
             <span class="txB base">HelloEveryDay</span>
           </span>
           <span id="right" class="base">
-        '.getCurrentUser()->displayName.'
+        '.$userOptions.'
           </span>
         </header>';
 }
