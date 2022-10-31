@@ -3,14 +3,22 @@
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/external/mediawiki.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/external/google.php';
 
-function getProviderIcon($provider){
+function getProviderIcon($provider, $conf=[]){
+  $title="";
+  $style="";
+  if(isset($conf["style"])){
+    $style="style='".$conf["style"]."' ";
+  }
+  if(isset($conf["title"])){
+    $title="title='".$conf["title"]."'";
+  }
   switch(strtolower($provider)){
     case 'google';
-      return "<i class=\"fa fa-google\" aria-hidden=\"true\"></i>";
+      return "<i class=\"fa fa-google\" aria-hidden=\"true\" ".$style.$title."></i>";
       break;
 
     case 'wikimedia';
-      return "<i class=\"fa fa-wikipedia-w\" aria-hidden=\"true\"></i>";
+      return "<i class=\"fa fa-wikipedia-w\" aria-hidden=\"true\" ".$style.$title."></i>";
       break;
   }
 }
