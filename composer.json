@@ -4,6 +4,7 @@
           "kreait/firebase-php": "^6.9",
           "google/auth": "^1.23",
           "google/apiclient": "^2.12.1",
-          "mediawiki/oauthclient": "^1.2"
+          "mediawiki/oauthclient": "^1.2",
+          "oojs/oojs-ui": "^0.45.0"
     }
 }

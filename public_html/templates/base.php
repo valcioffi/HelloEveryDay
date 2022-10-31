@@ -23,7 +23,7 @@ function heading(){
   if(getCurrentUser()!=null){
     $userOptions=getCurrentUser()->displayName." (<a href='/identity/logout'>logout</a>)";
     if(isset(getCurrentUser()->customClaims["provider"]))
-      $userOptions=getProviderIcon(getCurrentUser()->customClaims["provider"], ["style"=> "margin-right: 0.25em; font-size: 80%;", "title"=>getCurrentUser()->customClaims["provider"]." account"]).$userOptions;
+      $userOptions=getProviderIcon(getCurrentUser()->customClaims["provider"], ["style"=> "margin-right: 0.25em; font-size: 80% !important;", "title"=>getCurrentUser()->customClaims["provider"]." account"]).$userOptions;
   }else{
     $userOptions="<a href='/identity/signup'>Sign Up</a> &#183;
      <a>Log In</a>";
