@@ -23,7 +23,7 @@ function externalAuths(){
 }
 
 function authStyles(){
-  echo "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"><style>
+  echo "<style>
           body *:not(.base){
             font-size:100% !important;
           }
