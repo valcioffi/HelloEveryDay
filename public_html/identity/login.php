@@ -1,6 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
-require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/templates/auth.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/functions/auth.php';
 
