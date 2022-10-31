@@ -64,11 +64,11 @@ if ($pagename){
 ?>
 <html>
     <head>
-        <?php meta(['title' => $GLOBALS["lang_data"]["hello"]]) ?>
+        <?php baseHead(['title' => $GLOBALS["lang_data"]["hello"]]) ?>
         <?php if(isset($GLOBALS["lang_data"]["font"])) echo "<link href='https://fonts.googleapis.com/css?family=".$GLOBALS["lang_data"]["font"]."' rel='stylesheet'>"?>
     </head>
     <body>
-        <?php heading() ?>
+        <?php baseHeader() ?>
         <br/>
         <section id="content">
             <div id="helloContainer">
@@ -137,6 +137,6 @@ if ($pagename){
             $text=$text. "<h3>Legal disclaimer - Fair use</h3>Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.\n\nFair use is a use permitted by copyright statute that might otherwise be infringing.\n\nNon-profit, educational or personal use tips the balance in favor of fair use.";
         }
 
-        footer($text) ?>
+        baseFooter($text) ?>
     </body>
 </html>

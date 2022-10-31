@@ -16,11 +16,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <html>
     <head>
-        <?php meta(); authStyles() ?>
+        <?php baseHead(); authStyles() ?>
         
     </head>
     <body>
-        <?php heading() ?>
+        <?php baseHeader() ?>
         <section id="content" >
             <table width="100%" id="main">
               <tr>
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             
         </section>
-        <?php footer() ?>
+        <?php baseFooter() ?>
   
 </body>
 </html>

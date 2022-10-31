@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/templates/auth.php';
 
 use Kreait\Firebase\Factory;
 
-function meta($conf=[]){
+function baseHead($conf=[]){
   $title="HelloEveryDay";
   if(isset($conf["title"]))
     echo "<title>".$conf["title"]." - ".$title."</title>";
@@ -19,7 +19,7 @@ function meta($conf=[]){
   <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
 }
 
-function heading(){
+function baseHeader(){
   if(getCurrentUser()!=null){
     $userOptions=getCurrentUser()->displayName." (<a href='/identity/logout'>logout</a>)";
     if(isset(getCurrentUser()->customClaims["provider"]))
@@ -38,7 +38,7 @@ function heading(){
         </header>';
 }
 
-function footer($extra=''){
+function baseFooter($extra=''){
       echo '<hr width="90%" class="base">
         <footer id="footer" class="txG base">
         

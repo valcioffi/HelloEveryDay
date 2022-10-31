@@ -43,10 +43,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <html>
     <head>
-        <?php meta(); authStyles(); ?>
+        <?php baseHead(); authStyles(); ?>
     </head>
     <body>
-        <?php heading() ?>
+        <?php baseHeader() ?>
         <section id="content" >
             <?php
               if(isset($GLOBALS["logout"]))
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             
         </section>
-        <?php footer() ?>
+        <?php baseFooter() ?>
   
 </body>
 </html>

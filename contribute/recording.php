@@ -9,13 +9,13 @@ OOUI\Element::setDefaultDir( 'ltr' );
 ?>
 <html>
     <head>
-        <?php meta() ?>
+        <?php baseHead() ?>
         <!-- Use 'wikimediaui' or 'apex' -->
         <link rel="stylesheet" href="/dist/oojs-ui-core-wikimediaui.css">
         <link rel="stylesheet" href="/dist/oojs-ui-images-wikimediaui.css">
     </head>
     <body>
-        <?php heading() ?>
+        <?php baseHeader() ?>
         <section id="content">
             <?php
             $selectfile= new OOUI\SelectFileWidget( [
@@ -30,6 +30,6 @@ OOUI\Element::setDefaultDir( 'ltr' );
             echo $selectfile;
             ?>
         </section>
-        <?php footer() ?>
+        <?php baseFooter() ?>
     </body>
 </html>
