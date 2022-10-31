@@ -19,11 +19,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT']."/identity/external/integration.php";
 use Kreait\Firebase\Factory;
 
-$factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
+$factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/../.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
 
 $auth = $factory->createAuth();
 
-$oauth_credentials=$_SERVER['DOCUMENT_ROOT'].'/.config/auth/client_secret_752334791449-9cd0c4jp1m9kf5mutnvjerpdo0ikg3qr.apps.googleusercontent.com.json';
+$oauth_credentials=$_SERVER['DOCUMENT_ROOT'].'/../.config/auth/client_secret_752334791449-9cd0c4jp1m9kf5mutnvjerpdo0ikg3qr.apps.googleusercontent.com.json';
 
 
 // add "?logout" to the URL to remove a token from the session
@@ -65,7 +65,7 @@ if (isset($_GET['code'])) {
 }
 
 function google(){
-  $oauth_credentials=$_SERVER['DOCUMENT_ROOT'].'/.config/auth/client_secret_752334791449-9cd0c4jp1m9kf5mutnvjerpdo0ikg3qr.apps.googleusercontent.com.json';
+  $oauth_credentials=$_SERVER['DOCUMENT_ROOT'].'/../.config/auth/client_secret_752334791449-9cd0c4jp1m9kf5mutnvjerpdo0ikg3qr.apps.googleusercontent.com.json';
 
   $client = new Google\Client;
   $client->setApplicationName("HelloEveryDay");

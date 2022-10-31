@@ -11,7 +11,7 @@ use MediaWiki\OAuthClient\Token;
 session_start();
 
 if ( isset( $_GET['oauth_verifier'] ) ) {
-  require_once $_SERVER['DOCUMENT_ROOT'].'/.config/auth/mediawikiconfig.php';
+  require_once $_SERVER['DOCUMENT_ROOT'].'/../.config/auth/mediawikiconfig.php';
   // Configure the OAuth client with the URL and consumer details.
   $conf = new ClientConfig( $oauthUrl );
   $conf->setConsumer( new Consumer( $consumerKey, $consumerSecret ) );
@@ -55,7 +55,7 @@ if ( isset( $_GET['oauth_verifier'] ) ) {
 function mediawiki(){
   // Make sure the config file exists. This is just to make sure the demo makes sense if someone loads
   // it in the browser without reading the documentation.
-  $configFile = $_SERVER['DOCUMENT_ROOT'].'/.config/auth/mediawikiconfig.php';
+  $configFile = $_SERVER['DOCUMENT_ROOT'].'/../.config/auth/mediawikiconfig.php';
   if ( !file_exists( $configFile ) ) {
   	echo "Configuration could not be read. Please create $configFile by copying config.dist.php";
   	exit( 1 );

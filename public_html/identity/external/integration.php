@@ -1,12 +1,12 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/.config/auth/secure.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/../.config/auth/secure.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/functions/auth.php';
 
 use Kreait\Firebase\Factory;
 
 function authIntegration($name, $email, $provider){
-  $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
+  $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/../.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
   
   $auth = $factory->createAuth();
   try{

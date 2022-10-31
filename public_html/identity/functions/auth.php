@@ -2,7 +2,7 @@
 use Kreait\Firebase\Factory;
 
 function getCurrentUser(){     
-  $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
+  $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/../.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
   $auth = $factory->createAuth();
   $database = $factory->createDatabase();
   $GLOBALS["auth"]=$auth;
@@ -21,7 +21,7 @@ function getCurrentUser(){
 }
 
 function login($email, $password, $external=false){
-    $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
+    $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/../.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
     
     $auth = $factory->createAuth();
             
@@ -49,7 +49,7 @@ function login($email, $password, $external=false){
 }
 
 function signup($name, $email, $password, $custom=NULL, $external=false){
-  $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
+  $factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/../.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
     
   $auth = $factory->createAuth();
 
