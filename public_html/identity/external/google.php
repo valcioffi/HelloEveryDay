@@ -14,9 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
-require_once include_autoload();
 require_once $_SERVER['DOCUMENT_ROOT']."/identity/external/integration.php";
 use Kreait\Firebase\Factory;
 
