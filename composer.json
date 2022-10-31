@@ -5,7 +5,6 @@
           "google/auth": "^1.23",
           "google/apiclient": "^2.12.1",
           "mediawiki/oauthclient": "^1.2",
-          "oojs/oojs-ui": "^0.45.0",
-          "fxp/composer-asset-plugin": "*"
+          "oojs/oojs-ui": "^0.45.0"
     }
 }
