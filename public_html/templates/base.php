@@ -1,10 +1,10 @@
 <?php
 
 function include_autoload(){
-  return require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
+  return $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
 }
 
-include_autoload();
+require_once include_autoload();
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/functions/auth.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/templates/auth.php';
 
