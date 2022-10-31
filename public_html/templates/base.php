@@ -1,5 +1,10 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+
+function autoload(){
+  return require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
+}
+
+autoload();
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/functions/auth.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/templates/auth.php';
 

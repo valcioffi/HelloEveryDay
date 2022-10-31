@@ -1,7 +1,7 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
+autoload();
 
 OOUI\Theme::setSingleton( new WikimediaUITheme() );
 OOUI\Element::setDefaultDir( 'ltr' );

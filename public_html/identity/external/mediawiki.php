@@ -1,7 +1,8 @@
 <?php
 
 // Require the library and set up the classes we're going to use in this first part.
-require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
+autoload();
 require_once $_SERVER['DOCUMENT_ROOT']."/identity/external/integration.php";
 
 use MediaWiki\OAuthClient\Client;
