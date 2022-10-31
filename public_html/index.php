@@ -1,6 +1,6 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
-autoload();
+include_autoload();
 require_once $_SERVER['DOCUMENT_ROOT'].'/identity/functions/auth.php';
 
 use Kreait\Firebase\Factory;
