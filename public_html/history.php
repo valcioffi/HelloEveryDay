@@ -7,7 +7,7 @@ $GLOBALS["lang_data"]=getHelloData();
 <html>
     <head>
         <?php baseHead(['title' => "History"]) ?>
-        <?php foreach((array_splice($GLOBALS["lang_data"], getHelloIndex(), (count($GLOBALS["lang_data"]) - getHelloIndex()))) as $data)
+        <?php foreach(array_splice($GLOBALS["lang_data"], 0, getHelloIndex()+1) as $data)
             if(isset($data["font"])) echo "<link href='https://fonts.googleapis.com/css?family=".$data["font"]."' rel='stylesheet'>"?>
     </head>
     <body>
@@ -16,7 +16,7 @@ $GLOBALS["lang_data"]=getHelloData();
         <section id="content">
             <ol>
             <?php 
-                foreach((array_splice($GLOBALS["lang_data"], getHelloIndex(), (count($GLOBALS["lang_data"]) - getHelloIndex()))) as $index=>$data){
+                foreach(array_splice($GLOBALS["lang_data"], 0, getHelloIndex()+1) as $index=>$data){
                     $audio=""; $video=""; $wiktionary="";
                     if(isset($GLOBALS["lang_data"][$index]["audio"]))
                         $audio=" &#183; <button onclick='".helloListen($index)."'>Listen</button>";
