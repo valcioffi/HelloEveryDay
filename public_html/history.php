@@ -28,7 +28,7 @@ $GLOBALS["lang_data"]=getHelloData();
                         $wiktionary=" &#183; <button onclick='window.location.href=\"".getHelloWiktionary($GLOBALS["lang_data"][$index]["hello"])."\"'>Dictionary</button>";
 
 
-                    echo "<li>".ucfirst($data["hello"])." (<a href='/hello?langindex=".$index."'>details</a>) </li>";
+                    echo "<li>".ucfirst($data["hello"]).$audio.$video.$wiktionary;
                 }
             ?>
             </ol>
