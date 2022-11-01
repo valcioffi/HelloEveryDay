@@ -73,6 +73,7 @@ a:hover{
 }
 
 button, .button{
+  cursor: pointer;
   border: none;
   background-color:#0E65C0;
   color:white;

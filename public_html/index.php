@@ -1,66 +1,9 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/identity/functions/auth.php';
+require $_SERVER['DOCUMENT_ROOT'].'/hello.php';
 
-use Kreait\Firebase\Factory;
-
-$factory = (new Factory)->withServiceAccount($_SERVER['DOCUMENT_ROOT'].'/../.config/auth/helloeveryday-valentinocioffi-firebase-adminsdk-j729l-5426aaa7d6.json');
-
-$auth = $factory->createAuth();
-$database = $factory->createDatabase();
-$GLOBALS["auth"]=$auth;
-$GLOBALS["database"]=$database;
-
-$now = time(); // or your date as well
-
-if(getCurrentUser()!=null){
-  $created_at=getCurrentUser()->metadata->createdAt;
-  $start_date=new \DateTime();
-  $start_date->setTimestamp($created_at->getTimestamp());
-  $display=$start_date->format('Y-m-d');
-  $start_date=strtotime($display);
-} else {
-  $start_date=strtotime("0-0-0");
-
-}
-
-$difference=floor(($now-$start_date) / (60 * 60 * 24));
-
-$GLOBALS["lang_data"]=json_decode(file_get_contents("hello.json"), true); 
-$GLOBALS["lang_count"]=count($GLOBALS["lang_data"]);
-$GLOBALS["lang_index"]=$difference-(floor($difference/$GLOBALS["lang_count"])*$GLOBALS["lang_count"]);
-
-if(isset($_GET["langindex"]))
-  $GLOBALS["lang_index"]=$_GET["langindex"];
-
-$GLOBALS["lang_data"]=$GLOBALS["lang_data"][$GLOBALS["lang_index"]];
-
-$url = 'https://en.wiktionary.org/w/api.php';
-$data = [
-	"action" => "parse",
-	"format" => "json",
-	"page" => $GLOBALS["lang_data"]["hello"],
-	"prop" => "",
-	"formatversion" => "2"
-];
-
-// use key 'http' even if you send the request to https://...
-$options = array(
-    'http' => array(
-        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-        'method'  => 'POST',
-        'content' => http_build_query($data)
-    )
-);
-$context  = stream_context_create($options);
-$result = file_get_contents($url, false, $context);
-$pagename=json_decode($result)->parse->title;
-if ($pagename){
-      $GLOBALS["wiktionary"]="https://en.wiktionary.org/wiki/".$pagename."#".$GLOBALS["lang_data"]["language"];
-}
-
-  
+$GLOBALS["lang_data"]=getHelloData()[getHelloIndex()];
 ?>
 <html>
     <head>
@@ -77,23 +20,8 @@ if ($pagename){
                 <?php  if(isset($GLOBALS["lang_data"]["translitteration"])) {echo "<h2 id='translitteration' class='txB'>".$GLOBALS["lang_data"]["translitteration"]."</h2>";}
                 ?>
                 <hr width="70%"/>
-                
-                <script>
-                  var el=document.createElement("AUDIO");
-                  el.onended=function(){
-                    document.getElementById("listen").classList.remove("playing")
-                  }
-                  <?php 
-                    if(isset($GLOBALS["lang_data"]["audio"]))
-                      echo "el.src='".$GLOBALS["lang_data"]["audio"]."';";
-                  ?>
-                  function listen(){
-                    el.play();          document.getElementById("listen").classList.add("playing")
-                  }
-                </script>
-                <button id="listen" onclick="listen()" <?php if(!isset($GLOBALS["lang_data"]["audio"])) echo "title='Audio not aviable, sorry' disabled" ?>><span>Listen</span></button>
-                <button onclick="window.location.href='<?php
-      if(isset($GLOBALS["wiktionary"])) echo $GLOBALS["wiktionary"]?>'" <?php if(!isset($GLOBALS["wiktionary"])) echo "title='Dictionary not aviable, sorry' disabled" ?>>Dictionary</button>
+                <button id="listen" onclick="<?php listenHello(); ?>" <?php if(!isset($GLOBALS["lang_data"]["audio"])):?> title='Audio not aviable, sorry' disabled<?php endif; ?>><span>Listen</span></button>
+                <button onclick="window.location.href='<?php if(getHelloWiktionary()) echo getHelloWiktionary(); ?>'" <?php if(getHelloWiktionary()==false): ?> title='Dictionary not aviable, sorry' disabled <?php endif; ?>>Dictionary</button>
                 <br/>
                 <span class="txG"><?php echo ($GLOBALS["lang_index"]+1)."/".$GLOBALS["lang_count"]; ?></span>
                 
