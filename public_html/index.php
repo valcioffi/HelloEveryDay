@@ -112,8 +112,10 @@ if ($pagename){
   ";
             
       ?>
-      <a href="identity/signup.php">Customize your experience by creating an account</a>
-      <a href="identity/login.php">Log In</a>
+      <?php if(getCurrentUser()==null): ?>
+        <p>Have access to extra functionalities by <a href="identity/signup.php">Signing Up</a> or <a href="identity/login.php">Logging In</a>!</p>
+      <?php endif; ?>
+      <button onclick="window.location.href='/history'" <?php if(getCurrentUser()==null): ?>title="You need do be Logged In" disabled<?php endif; ?>>History</button>
         </section>
         <section id="about">
           <h2>HelloEveryDay</h2>
