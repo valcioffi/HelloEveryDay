@@ -1,8 +1,8 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
 require $_SERVER['DOCUMENT_ROOT'].'/hello.php';
-
-$GLOBALS["lang_data"]=array_splice(getHelloData(), -count(getHelloData())-getHelloIndex());
+$GLOBALS["lang_data"]=getHelloData();
+array_splice($GLOBALS["lang_data"], -count($GLOBALS["lang_data"])-getHelloIndex()-1);
 ?>
 <html>
     <head>

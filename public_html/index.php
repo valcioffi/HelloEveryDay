@@ -20,7 +20,7 @@ $GLOBALS["lang_data"]=getHelloData()[getHelloIndex()];
                 <?php  if(isset($GLOBALS["lang_data"]["translitteration"])) {echo "<h2 id='translitteration' class='txB'>".$GLOBALS["lang_data"]["translitteration"]."</h2>";}
                 ?>
                 <hr width="70%"/>
-                <button id="listen" onclick="<?php listenHello(); ?>" <?php if(!isset($GLOBALS["lang_data"]["audio"])):?> title='Audio not aviable, sorry' disabled<?php endif; ?>><span>Listen</span></button>
+                <button id="listen" onclick="<?php echo listenHello(); ?>" <?php if(!isset($GLOBALS["lang_data"]["audio"])):?> title='Audio not aviable, sorry' disabled<?php endif; ?>><span>Listen</span></button>
                 <button onclick="window.location.href='<?php if(getHelloWiktionary()) echo getHelloWiktionary(); ?>'" <?php if(getHelloWiktionary()==false): ?> title='Dictionary not aviable, sorry' disabled <?php endif; ?>>Dictionary</button>
                 <br/>
                 <span class="txG"><?php echo (getHelloIndex()+1)."/".count(getHelloData()); ?></span>

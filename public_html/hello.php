@@ -69,7 +69,7 @@ function listenHello($index=null){
     if(!isset(getHelloData()[$index]["audio"]))
         return false;
 
-    echo '
+    return '
         var btn=this;
         var el=document.createElement(\'AUDIO\');
         el.onended=function(){
