@@ -2,12 +2,12 @@
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
 require $_SERVER['DOCUMENT_ROOT'].'/hello.php';
 
-$GLOBALS["lang_data"]=getHelloData();
+$GLOBALS["lang_data"]=array_splice(getHelloData(),  -(count($GLOBALS["lang_data"])+getHelloIndex()))
 ?>
 <html>
     <head>
         <?php baseHead(['title' => "History"]) ?>
-        <?php foreach(array_splice($GLOBALS["lang_data"],  0, getHelloIndex()+1) as $data)
+        <?php foreach($GLOBALS["lang_data"] as $data)
             if(isset($data["font"])) echo "<link href='https://fonts.googleapis.com/css?family=".$data["font"]."' rel='stylesheet'>"?>
     </head>
     <body>
@@ -16,7 +16,7 @@ $GLOBALS["lang_data"]=getHelloData();
         <section id="content">
             <ol>
             <?php 
-                foreach(array_splice($GLOBALS["lang_data"],  0, getHelloIndex()+1) as $index=>$data){
+                foreach($GLOBALS["lang_data"] as $index=>$data){
                     $audio=""; $video=""; $wiktionary="";
                     if(isset($GLOBALS["lang_data"][$index]["audio"]))
                         $audio=" &#183; <button onclick=\"".listenHello($index)."\">Listen</button>";
