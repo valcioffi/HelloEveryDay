@@ -23,7 +23,7 @@ $GLOBALS["lang_data"]=getHelloData()[getHelloIndex()];
                 <button id="listen" onclick="<?php listenHello(); ?>" <?php if(!isset($GLOBALS["lang_data"]["audio"])):?> title='Audio not aviable, sorry' disabled<?php endif; ?>><span>Listen</span></button>
                 <button onclick="window.location.href='<?php if(getHelloWiktionary()) echo getHelloWiktionary(); ?>'" <?php if(getHelloWiktionary()==false): ?> title='Dictionary not aviable, sorry' disabled <?php endif; ?>>Dictionary</button>
                 <br/>
-                <span class="txG"><?php echo (getHelloIndex()+1)."/".count($GLOBALS["lang_data"]); ?></span>
+                <span class="txG"><?php echo (getHelloIndex()+1)."/".count(getHelloData()); ?></span>
                 
             </div>
             <br/><br/>

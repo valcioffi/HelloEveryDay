@@ -70,14 +70,13 @@ function listenHello($index=null){
         return false;
 
     echo '
-    function(){
+        var btn=this;
         var el=document.createElement(\'AUDIO\');
         el.onended=function(){
-          this.classList.remove(\'playing\');
+          btn.classList.remove(\'playing\');
         }
         el.src=\''.getHelloData()[$index]["audio"].'\';
         el.play();
-        this.classList.add(\'playing\');
-    }
+        btn.classList.add(\'playing\');
     ';
 }
