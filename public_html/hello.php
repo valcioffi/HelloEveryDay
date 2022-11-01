@@ -71,13 +71,13 @@ function listenHello($index=null){
 
     echo '
     function(){
-        var el=document.createElement("AUDIO");
+        var el=document.createElement(\'AUDIO\');
         el.onended=function(){
-          this.classList.remove("playing")
+          this.classList.remove(\'playing\');
         }
-        el.src="'.getHelloData()[$index]["audio"].'";
+        el.src=\''.getHelloData()[$index]["audio"].'\';
         el.play();
-        this.classList.add("playing")
+        this.classList.add(\'playing\');
     }
     ';
 }
