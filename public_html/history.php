@@ -2,7 +2,7 @@
 require $_SERVER['DOCUMENT_ROOT'].'/templates/base.php';
 require $_SERVER['DOCUMENT_ROOT'].'/hello.php';
 $GLOBALS["lang_data"]=getHelloData();
-$GLOBALS["lang_data"]=array_splice($GLOBALS["lang_data"], -1*count($GLOBALS["lang_data"]) + getHelloIndex()+1);
+$GLOBALS["lang_data"]=array_splice($GLOBALS["lang_data"], 0, getHelloIndex()+1);
 ?>
 <html>
     <head>
