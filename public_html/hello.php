@@ -62,11 +62,11 @@ function getHelloWiktionary($hello=null){
     } else return false;
 }
 
-function listenHello($index=null){
-    if ($index==null)
-        $index=getHelloIndex();
+function listenHello($hello=null){
+    if ($hello==null)
+        $hello=getHelloData()[getHelloIndex()]["hello"];
 
-    if(!isset(getHelloData()[$index]["audio"]))
+    if(!isset($hello["audio"]))
         return false;
 
     return '
@@ -75,7 +75,7 @@ function listenHello($index=null){
         el.onended=function(){
           btn.classList.remove(\'playing\');
         }
-        el.src=\''.getHelloData()[$index]["audio"].'\';
+        el.src=\''.$hello["audio"].'\';
         el.play();
         btn.classList.add(\'playing\');
     ';

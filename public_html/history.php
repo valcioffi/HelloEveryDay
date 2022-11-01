@@ -16,10 +16,10 @@ $GLOBALS["lang_data"]=array_splice($GLOBALS["lang_data"], 0, getHelloIndex()+1);
         <section id="content">
             <ol>
             <?php 
-                foreach($GLOBALS["lang_data"] as $index=>$data){
+                foreach($GLOBALS["lang_data"] as $data){
                     $audio=""; $video=""; $wiktionary="";
                     if(isset($GLOBALS["lang_data"][$index]["audio"]))
-                        $audio=" &#183; <button onclick=\"".listenHello($index)."\">Listen</button>";
+                        $audio=" &#183; <button onclick=\"".listenHello($data)."\">Listen</button>";
 
                     if(isset($GLOBALS["lang_data"][$index]["video"]))
                         $video=" &#183; <button onclick='window.location.href=\"".$GLOBALS["lang_data"][$index]["video"]."\"'>Video</button>";
