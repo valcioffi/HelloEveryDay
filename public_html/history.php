@@ -16,16 +16,16 @@ $GLOBALS["lang_data"]=getHelloData();
         <section id="content">
             <ol>
             <?php 
-                foreach((array_splice(array_splice($GLOBALS["lang_data"], getHelloIndex(), (count($GLOBALS["lang_data"]) - getHelloIndex())))) as $index=>$data){
+                foreach((array_splice($GLOBALS["lang_data"], getHelloIndex(), (count($GLOBALS["lang_data"]) - getHelloIndex()))) as $index=>$data){
                     $audio=""; $video=""; $wiktionary="";
                     if(isset($GLOBALS["lang_data"][$index]["audio"]))
                         $audio=" &#183; <button onclick='".helloListen($index)."'>Listen</button>";
 
                     if(isset($GLOBALS["lang_data"][$index]["video"]))
-                        $audio=" &#183; <button onclick='window.location.href=\"".$GLOBALS["lang_data"][$index]["video"]."\"'>Video</button>";
+                        $video=" &#183; <button onclick='window.location.href=\"".$GLOBALS["lang_data"][$index]["video"]."\"'>Video</button>";
 
                     if(getHelloWiktionary($GLOBALS["lang_data"][$index]["hello"])!=false)
-                        $audio=" &#183; <button onclick='window.location.href=\"".getHelloWiktionary($GLOBALS["lang_data"][$index]["hello"])."\"'>Dictionary</button>";
+                        $wiktionary=" &#183; <button onclick='window.location.href=\"".getHelloWiktionary($GLOBALS["lang_data"][$index]["hello"])."\"'>Dictionary</button>";
 
 
                     echo "<li>".ucfirst($data["hello"])." (<a href='/hello?langindex=".$index."'>details</a>) </li>";

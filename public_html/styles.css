@@ -87,6 +87,7 @@ button, .button{
 button:disabled,
 button[disabled]{
   background-color:#BFBFBF;
+  cursor: not-allowed;
 }
 
 button.playing{
