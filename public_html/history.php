@@ -18,14 +18,14 @@ $GLOBALS["lang_data"]=array_splice($GLOBALS["lang_data"], 0, getHelloIndex()+1);
             <?php 
                 foreach($GLOBALS["lang_data"] as $data){
                     $audio=""; $video=""; $wiktionary="";
-                    if(isset($GLOBALS["lang_data"][$index]["audio"]))
+                    if(isset($data["audio"]))
                         $audio=" &#183; <button onclick=\"".listenHello($data)."\">Listen</button>";
 
-                    if(isset($GLOBALS["lang_data"][$index]["video"]))
-                        $video=" &#183; <button onclick='window.location.href=\"".$GLOBALS["lang_data"][$index]["video"]."\"'>Video</button>";
+                    if(isset($data["video"]))
+                        $video=" &#183; <button onclick='window.location.href=\"".$data["video"]."\"'>Video</button>";
 
-                    if(getHelloWiktionary($GLOBALS["lang_data"][$index]["hello"])!=false)
-                        $wiktionary=" &#183; <button onclick='window.location.href=\"".getHelloWiktionary($GLOBALS["lang_data"][$index]["hello"])."\"'>Dictionary</button>";
+                    if(getHelloWiktionary($data["hello"])!=false)
+                        $wiktionary=" &#183; <button onclick='window.location.href=\"".getHelloWiktionary($data["hello"])."\"'>Dictionary</button>";
 
 
                     echo "<li>".ucfirst($data["hello"]).$audio.$video.$wiktionary;
