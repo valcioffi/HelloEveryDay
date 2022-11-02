@@ -64,7 +64,7 @@ function getHelloWiktionary($hello=null){
 
 function listenHello($hello=null){
     if ($hello==null)
-        $hello=getHelloData()[getHelloIndex()]["hello"];
+        $hello=getHelloData()[getHelloIndex()];
 
     if(!isset($hello["audio"]))
         return false;
