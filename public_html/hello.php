@@ -58,7 +58,7 @@ function getHelloWiktionary($hello=null){
     $result = file_get_contents($url, false, $context);
     $pagename=json_decode($result)->parse->title;
     if ($pagename){
-        return "https://en.wiktionary.org/wiki/".$pagename."#".$GLOBALS["lang_data"]["language"];
+        return "https://en.wiktionary.org/wiki/".$pagename."#".$data["language"];
     } else return false;
 }
 

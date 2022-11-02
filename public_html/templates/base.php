@@ -26,7 +26,7 @@ function baseHeader(){
       $userOptions=getProviderIcon(getCurrentUser()->customClaims["provider"], ["style"=> "margin-right: 0.25em; font-size: 80% !important;", "title"=>getCurrentUser()->customClaims["provider"]." account"]).$userOptions;
   }else{
     $userOptions="<a href='/identity/signup'>Sign Up</a> &#183;
-     <a href='/identity/login>Log In</a>";
+     <a href='/identity/login'>Log In</a>";
   }
   echo '<header id="header" class="base">
           <span id="left" class="base">
