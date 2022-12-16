@@ -29,6 +29,7 @@ $GLOBALS["lang_data"]=getHelloData()[getHelloIndex()];
             <br/><br/>
       <?php
     if(!isset($GLOBALS["lang_data"]["audio"])){
+      $hope="";
       if(isset($GLOBALS["lang_data"]["video"]))
         $hope=" You will still be able to listen the word by watching <a href='".$GLOBALS["lang_data"]["video"]."'>this video</a>.";
       echo "<span id='noaudio'>Sorry, no audio aviable for this language.".$hope." <a href='contribute.php'>Contribute</a></span><br/>";

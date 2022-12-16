@@ -14,7 +14,7 @@ function getCurrentUser(){
       $uid = $verifiedSessionCookie->claims()->get('sub');
       $user = $GLOBALS["auth"]->getUser($uid);
       return $user;
-    } catch (FailedToVerifySessionCookie | Kreait\Firebase\Exception\Auth\UserNotFound $e) { return null; }
+    } catch (FailedToVerifySessionCookie | Kreait\Firebase\Exception\Auth\UserNotFound | Kreait\Firebase\Exception\Auth\FailedToVerifySessionCookie $e) { return null; }
   }else{
     return null;
   }
