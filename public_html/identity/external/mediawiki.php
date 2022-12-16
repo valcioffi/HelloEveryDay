@@ -40,7 +40,7 @@ if ( isset( $_GET['oauth_verifier'] ) ) {
   // Configure the OAuth client with the URL and consumer details.
   $conf = new ClientConfig( $oauthUrl );
   $conf->setConsumer( new Consumer( $consumerKey, $consumerSecret ) );
-  $conf->setUserAgent( 'DemoApp MediaWikiOAuthClient/1.0' );
+  $conf->setUserAgent( 'HelloEveryDay MediaWikiOAuthClient/1.0' );
   $client = new Client( $conf );
 
   // Load the Access Token from the session.
@@ -49,7 +49,7 @@ if ( isset( $_GET['oauth_verifier'] ) ) {
 
   // Example 1: get the authenticated user's identity.
   $ident = $client->identify( $accessToken );
-  authIntegration($ident->username, $ident->username.".wikimedia@helloeveryday.toolforge.org", "Wikimedia");
+  authIntegration($ident->username, $ident->userid.".wikimedia@helloeveryday.toolforge.org", "Wikimedia");
 }
 
 function mediawiki(){
