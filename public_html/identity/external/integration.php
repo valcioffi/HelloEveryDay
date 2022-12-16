@@ -14,7 +14,7 @@ function authIntegration($name, $email, $provider){
       if(isset($auth->getUserByEmail($email)->customClaims["provider"]))
         login($email, secureExternalAuth($name, $email), true);
       else
-        echo "This account is already signed up locally. Can't Log In trought ".$provider;
+        echo "This email is already linked with a local account. Can't Log In trought ".$provider;
     }
   }catch (Kreait\Firebase\Exception\Auth\UserNotFound $e){
     signup($name, $email, secureExternalAuth($name, $email), ['provider' => $provider], true);
